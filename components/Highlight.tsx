@@ -2,7 +2,7 @@ import Slider from "./Library/Slider";
 
 const Highlight = () => {
     return ( 
-    <Slider />
+    <Slider deviceType={undefined} />
     )
 }
  
