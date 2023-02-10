@@ -12,7 +12,7 @@ const Intro = () => {
             <div className="flex flex-col md:flex-row gap-x-8 gap-y-8">
                 <ContentDetails
                     title='Hello I&apos;m Andrea Destajo,'
-                    description='Hard working professional with 3 years of experience in providing comprehensive technical support to clients and companies.
+                    description='Hard working professional with almost 3 years of experience in providing comprehensive technical support to clients and companies.
                     Enthusiastic professional with background in developing a e-commerce project.
 
                     Aiming to leverage skills to successfully fill the Developer role.

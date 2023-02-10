@@ -69,7 +69,8 @@ const Skills = () => {
                 />
                 <ContentDetails
                     title='Why Hire Me For Next Project?'
-                    description='As a Software Engineer I want to make sure to accomplished every single task that need to be done in a given period of time. I could collaborate in every members of the team just to have a clarification on the work that we need to do and clear visualization of the actual result.'
+                    description='As a Software Engineer I want to make sure to accomplished every single task that need to be done in a given period of time. I could collaborate in every members of the team just to have a clarification on the task that we need to work on and a clear visualization of the actual result. With that for almost 3 years of working as a developer I can immediately help you accomplish software
+                    development'
                     btnLabel="Download CV"
                     url=""
                 />
