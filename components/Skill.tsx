@@ -19,7 +19,7 @@ const Skills = () => {
                             alt=""
                         />
                         <p>Node Js</p>
-                        <p>1 year backend experience with node js.</p>
+                        <p className="break-normal">1 year backend experience with node js.</p>
                     </Fragment>
                 </Card>
 
@@ -32,7 +32,7 @@ const Skills = () => {
                             alt=""
                         />
                         <p>React Js/Next js</p>
-                        <p>No experience yet with this javascript library but still learning React Js. Had a basic knowledge with this libraries and this porfolio was based on React.</p>
+                        <p className="break-normal">No experience yet with this javascript library but still learning React Js. Had a basic knowledge with this libraries and this porfolio was based on React.</p>
                     </Fragment>
                 </Card>
 
@@ -45,7 +45,7 @@ const Skills = () => {
                             alt=""
                         />
                         <p>Nuxt Js</p>
-                        <p>More that 1 year experience with Nuxt. Bilidali and Commisari was my main project that was based on this framework.</p>
+                        <p className="break-normal">More that 1 year experience with Nuxt. Bilidali and Commisari was my main project that was based on this framework.</p>
                     </Fragment>
                 </Card>
 
@@ -58,7 +58,7 @@ const Skills = () => {
                             alt=""
                         />
                         <p>Vue Js</p>
-                        <p>More than two years experience with this javascript framework.</p>
+                        <p className="break-normal">More than two years experience with this javascript framework.</p>
                     </Fragment>
                 </Card>
             </section>
@@ -70,7 +70,7 @@ const Skills = () => {
                 <ContentDetails
                     title='Why Hire Me For Next Project?'
                     description='As a Software Engineer I want to make sure to accomplished every single task that need to be done in a given period of time. I could collaborate in every members of the team just to have a clarification on the task that we need to work on and a clear visualization of the actual result. With that for almost 3 years of working as a developer I can immediately help you accomplish software
-                    development'
+                    development.'
                     btnLabel="Download CV"
                     url=""
                 />
