@@ -7,6 +7,7 @@ import projet2 from '../public/bitcapp.png'
 import projet3 from '../public/commisari.png'
 
 const Project = () => {
+    const localClass = " w-full transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 "
     return ( 
         <div className='flex flex-col gap-y-8'>
             <div className='grid grid-cols-1 gap-16 md:grid-cols-2 m-24'>
@@ -21,11 +22,12 @@ const Project = () => {
                         Fulfill orders."
                         btnLabel='visit'
                         url='https://www.bilidaily.com'
+                        fontSize='font-base'
                     />
                 </section>
                 <Fragment>
                     <Image
-                        className='w-full'
+                        className={localClass}
                         src={projet1}
                         width={500}
                         height={500}
@@ -36,7 +38,7 @@ const Project = () => {
             <div className='grid grid-cols-1 gap-16 md:grid-cols-2 m-24'>
                 <Fragment>
                     <Image
-                        className='w-full'
+                        className={localClass}
                         src={projet2}
                         width={500}
                         height={500}
@@ -50,6 +52,7 @@ const Project = () => {
                         description='Company website aims to inform everyone about the business capabilities, Business organization, and Business opportunities.'
                         btnLabel='visit'
                         url='https://bitcapp.netlify.app/#/'
+                        fontSize='font-base'
                     />
                 </section>
             </div>
@@ -62,11 +65,12 @@ const Project = () => {
                         description='Commisari aims to give a food supplier, hotel, restaurant and/or caterer an application where it is easy for them to make their food orders regularly so that they can conveniently and quickly address their inventory requirements for their F&B business'
                         btnLabel='visit'
                         url='https://www.commisari.com'
+                        fontSize='font-base'
                     />
                 </section>
                 <Fragment>
                     <Image
-                        className='w-full'
+                        className={localClass}
                         src={projet3}
                         width={500}
                         height={500}
