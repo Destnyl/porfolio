@@ -18,12 +18,13 @@ const Navbar = () => {
           height={20}
           alt='Project'
       />
-        <h1>Andrea Destajo</h1>
+        <h1 className="text-3xl font-mono">Andrea Destajo</h1>
       </div>
-      <div className="flex gap-x-8">
+      <div className="flex gap-x-8 text-xl font-mono ">
       { 
         navigation.map((item) => (
           <Link 
+            className="hover:text-emerald-600  hover:border-t-4 "
             href={item.href}
             key={item.name}
           >

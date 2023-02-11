@@ -73,6 +73,7 @@ const Skills = () => {
                     development.'
                     btnLabel="Download CV"
                     url=""
+                    fontSize="text-base"
                 />
             </section>
         </div>

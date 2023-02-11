@@ -4,12 +4,13 @@ import ContentDetails from '../components/ContentDetails'
 import imageUrl from '../public/feedback/profile2.png'
 
 const Intro = () => {
+
     return ( 
-        <div className='flex flex-col gap-y-4 p-32 bg-stone-900'>
+        <div className='flex flex-col gap-y-4 p-32  mt-7 bg-stone-900  bg-no-repeat bg-right bg-[url("../public/feedback/profile2.png")] bg-contain'>
             <ContentTitle
                 title="Introduction"
             />
-            <div className="flex flex-col md:flex-row gap-x-8 gap-y-8">
+            <div className="flex flex-col md:flex-row gap-x-8 gap-y-8 font-mono pb-32 w-8/12">
                 <ContentDetails
                     title='Hello I&apos;m Andrea Destajo,'
                     description='Hard working professional with almost 3 years of experience in providing comprehensive technical support to clients and companies.
@@ -19,15 +20,8 @@ const Intro = () => {
                     '
                     btnLabel='Contact'
                     url=""
+                    fontSize='text-3xl'
                 />
-                <div className='flex justify-center'>
-                    <Image
-                        src={imageUrl}
-                        height={3000}
-                        width={3000}
-                        alt="profile"
-                    />
-                </div>
             </div>
         </div>
      );

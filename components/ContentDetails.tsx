@@ -6,9 +6,11 @@ interface Details {
     title: string,
     description: string,
     btnLabel: string,
-    url: string
+    url: string,
+    fontSize: string
 }
-const Details = ({title, description, btnLabel, url}: Details) => {
+
+const Details = ({title, description, btnLabel, url, fontSize}: Details) => {
     const router = useRouter()
 
     const handleClick = () => {
@@ -17,10 +19,10 @@ const Details = ({title, description, btnLabel, url}: Details) => {
 
     return ( 
         <div className="flex flex-col gap-y-8">
-        <section className="text-4xl">
+        <section className="text-7xl">
             <p>{title}</p>
         </section>
-        <section className="descrition">
+        <section className={"description " + fontSize}>
             {description}
         </section>
         <div>
