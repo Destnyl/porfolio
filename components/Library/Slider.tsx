@@ -75,7 +75,7 @@ const Slider = (props: { deviceType: string | undefined; }) => {
         />
         <h1 className="text-2xl">Joanna Grace Jose</h1>
         <h1 className="text-sm">UBx - Quality Assurance Lead</h1>
-        <p className="break-normal">Unionbank rewards and recognition for providing a great customer experience to their client and for continuous support for the development. </p>
+        <p className="break-normal">I’ve worked with Andrea for a Marketplace project, She’s a creative/talented FE developer, she can manage the changes happening, she’s a team player and proactive if anything is needed on her side. It’s a pleasure to work with her & I would love to work with her again in the future </p>
 
       </Fragment>
       </Card>
