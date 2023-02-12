@@ -4,7 +4,7 @@ import ContentDetails from '../components/ContentDetails'
 const Intro = () => {
 
     const handleClick = () => {
-        window.open('www.facebook.com');
+        window.open('https://www.linkedin.com/in/andrea-lyn-destajo-828317139/');
     }
 
     return ( 
