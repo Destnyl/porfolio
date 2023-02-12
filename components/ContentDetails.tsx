@@ -1,20 +1,16 @@
 import Button from "./base/button";
 import { useRouter } from 'next/router'
-
+import { MouseEventHandler } from "react";
 interface Details {
     title: string,
     description: string,
     btnLabel: string,
-    url: string,
-    fontSize: string
+    fontSize: string,
+    fn: MouseEventHandler<HTMLButtonElement> | undefined
 }
 
-const Details = ({title, description, btnLabel, url, fontSize}: Details) => {
+const Details = ({title, description, btnLabel, fontSize, fn}: Details) => {
     const router = useRouter()
-
-    const handleClick = () => {
-        window.open(url);
-      }
 
     return ( 
         <div className="flex flex-col gap-y-8">
@@ -27,7 +23,7 @@ const Details = ({title, description, btnLabel, url, fontSize}: Details) => {
         <div>
         <Button
             label={btnLabel}
-            fn={handleClick}
+            fn={fn}
         />
         </div>
     </div>

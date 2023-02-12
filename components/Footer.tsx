@@ -1,7 +1,7 @@
 import Image from "next/image";
 import logoURL from '../public/Logo.svg'
-import fbLogo from '../public/LinkedIn.png'
-import LinkedInLogo from '../public/Facebook.png'
+import LinkedInLogo from '../public/LinkedIn.png'
+import fbLogo from '../public/Facebook.png'
 import whatsappLogo from '../public/Whatsapp.png'
 
 function Footer() {
@@ -18,6 +18,16 @@ function Footer() {
         <h1>Copyright © 2022 AndreaDestajo</h1>
       </div>
       <div className="flex flex-row gap-x-7 items-center">
+        <a href="https://web.facebook.com/andrealyn.destajo" target="_blank" rel="noreferrer">
+        <Image
+            className="cursor-pointer"
+            src={fbLogo}
+            width={50}
+            height={50}
+            alt='Project'
+        />
+        </a>
+      <a href="https://www.linkedin.com/in/andrea-lyn-destajo-828317139/" target="_blank" rel="noreferrer">
       <Image
           className="cursor-pointer"
           src={LinkedInLogo}
@@ -25,20 +35,17 @@ function Footer() {
           height={50}
           alt='Project'
       />
-      <Image
-          className="cursor-pointer"
-          src={fbLogo}
-          width={50}
-          height={50}
-          alt='Project'
-      />
-      <Image
-          className="cursor-pointer"
-          src={whatsappLogo}
-          width={50}
-          height={50}
-          alt='Project'
-      />
+      </a>
+      <a href="tel:+639985338417">
+        <Image
+            className="cursor-pointer"
+            src={whatsappLogo}
+            width={50}
+            height={50}
+            alt='Project'
+        />
+      </a>
+      
       </div>
     </div>
   );

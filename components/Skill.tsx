@@ -7,9 +7,13 @@ import vueLogoUrl from "../public/logo/vue.png"
 import nuxtLogoUrl from "../public/logo/nuxt.png"
 import reactLogoUrl from "../public/logo/react.png"
 import { Fragment } from "react";
-import Button from "./base/button";
 
 const Skills = () => {
+
+    const handleClick = ( url: any) => {
+        window.open('../public/file/resume.pdf', '_blank');
+    }
+
     return ( 
         <div className="flex-none md:flex justify-between gap-x-8 gap-y-8 items-center p-8">
             <section className="grid grid-cols-1 gap-2 md:grid-cols-2">
@@ -75,8 +79,8 @@ const Skills = () => {
                     description='As a Software Engineer I want to make sure to accomplished every single task that need to be done in a given period of time. I could collaborate in every members of the team just to have a clarification on the task that we need to work on and a clear visualization of the actual result. With that for almost 3 years of working as a developer I can immediately help you accomplish software
                     development.'
                     btnLabel="Download CV"
-                    url=""
                     fontSize="text-base"
+                    fn={handleClick}
                 />
             </section>
         </div>

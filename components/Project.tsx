@@ -12,6 +12,9 @@ import nuxtLogoUrl from "../public/logo/nuxt.png"
 
 const Project = () => {
     const localClass = " w-full transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 "
+    const handleClick = ( url: any ) => {
+        window.open(url);
+      }
     return ( 
         <div className='flex flex-col gap-y-8'>
             <div className='grid grid-cols-1 gap-16 md:grid-cols-2 m-24'>
@@ -25,7 +28,7 @@ const Project = () => {
                         Accept online payments, and
                         Fulfill orders."
                         btnLabel='visit'
-                        url='https://www.bilidaily.com'
+                        fn={() => handleClick('https://www.bilidaily.com')}
                         fontSize='font-base'
                     />
                     <div className='flex flex-row gap-x-8 mt-4'>
@@ -59,7 +62,7 @@ const Project = () => {
                         title='Bitcapp'
                         description='Company website aims to inform everyone about the business capabilities, Business organization, and Business opportunities.'
                         btnLabel='visit'
-                        url='https://bitcapp.netlify.app/#/'
+                        fn={() => handleClick('https://bitcapp.netlify.app/#/')}
                         fontSize='font-base'
                     />
                     <div className='flex flex-row gap-x-8 mt-4'>
@@ -77,7 +80,7 @@ const Project = () => {
                         title='Commisari'
                         description='Commisari aims to give a food supplier, hotel, restaurant and/or caterer an application where it is easy for them to make their food orders regularly so that they can conveniently and quickly address their inventory requirements for their F&B business'
                         btnLabel='visit'
-                        url='https://www.commisari.com'
+                        fn={() => handleClick('https://www.commisari.com')}
                         fontSize='font-base'
                     />
                     <div className='flex flex-row gap-x-8 mt-4'>
