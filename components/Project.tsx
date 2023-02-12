@@ -5,6 +5,10 @@ import ContentTitle from '../components/ContentTitle'
 import projet1 from '../public/biliDaily.png'
 import projet2 from '../public/bitcapp.png'
 import projet3 from '../public/commisari.png'
+import Icon from './icon';
+import quasar from "../public/logo/quasar.png"
+import vueLogoUrl from "../public/logo/vue.png"
+import nuxtLogoUrl from "../public/logo/nuxt.png"
 
 const Project = () => {
     const localClass = " w-full transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 "
@@ -24,6 +28,10 @@ const Project = () => {
                         url='https://www.bilidaily.com'
                         fontSize='font-base'
                     />
+                    <div className='flex flex-row gap-x-8 mt-4'>
+                        <Icon url={vueLogoUrl}/>
+                        <Icon url={nuxtLogoUrl}/>
+                    </div>
                 </section>
                 <Fragment>
                     <Image
@@ -54,6 +62,11 @@ const Project = () => {
                         url='https://bitcapp.netlify.app/#/'
                         fontSize='font-base'
                     />
+                    <div className='flex flex-row gap-x-8 mt-4'>
+                        <Icon url={vueLogoUrl}/>
+                        <Icon url={nuxtLogoUrl}/>
+                        <Icon url={quasar}/>
+                    </div>
                 </section>
             </div>
 
@@ -67,6 +80,10 @@ const Project = () => {
                         url='https://www.commisari.com'
                         fontSize='font-base'
                     />
+                    <div className='flex flex-row gap-x-8 mt-4'>
+                        <Icon url={vueLogoUrl}/>
+                        <Icon url={nuxtLogoUrl}/>
+                    </div>
                 </section>
                 <Fragment>
                     <Image
