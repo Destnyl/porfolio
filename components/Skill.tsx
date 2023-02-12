@@ -2,7 +2,10 @@ import Image from "next/image";
 import Card from "./Card";
 import ContentTitle from '../components/ContentTitle'
 import ContentDetails from '../components/ContentDetails'
-import imageUrl from "../public/skills.png"
+import nodeLogoUrl from "../public/logo/node.png"
+import vueLogoUrl from "../public/logo/vue.png"
+import nuxtLogoUrl from "../public/logo/nuxt.png"
+import reactLogoUrl from "../public/logo/react.png"
 import { Fragment } from "react";
 import Button from "./base/button";
 
@@ -13,7 +16,7 @@ const Skills = () => {
                 <Card>
                     <Fragment>
                         <Image 
-                            src={imageUrl}
+                            src={nodeLogoUrl}
                             width={50}
                             height={50}
                             alt=""
@@ -26,7 +29,7 @@ const Skills = () => {
                 <Card>
                     <Fragment>
                         <Image 
-                            src={imageUrl}
+                            src={reactLogoUrl}
                             width={50}
                             height={50}
                             alt=""
@@ -39,7 +42,7 @@ const Skills = () => {
                 <Card>
                     <Fragment>
                         <Image 
-                            src={imageUrl}
+                            src={nuxtLogoUrl}
                             width={50}
                             height={50}
                             alt=""
@@ -52,7 +55,7 @@ const Skills = () => {
                 <Card>
                     <Fragment>
                         <Image 
-                            src={imageUrl}
+                            src={vueLogoUrl}
                             width={50}
                             height={50}
                             alt=""
