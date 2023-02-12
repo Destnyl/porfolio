@@ -4,8 +4,8 @@ import imageURL from '../public/Logo.svg'
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
-  { name: 'Work', href: '/work', current: false },
-  { name: 'Contact', href: '/contact', current: false }
+  { name: 'About', href: '/work', current: false },
+  // { name: 'Contact', href: '/contact', current: false }
 ]
 
 const Navbar = () => {

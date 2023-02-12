@@ -1,7 +1,5 @@
-import Image from 'next/image';
 import ContentTitle from '../components/ContentTitle'
 import ContentDetails from '../components/ContentDetails'
-import imageUrl from '../public/feedback/profile2.png'
 
 const Intro = () => {
 

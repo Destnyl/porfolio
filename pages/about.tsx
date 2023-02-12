@@ -1,7 +1,8 @@
+
 const About = () => {
     return ( 
-        <div>
-            About
+        <div className="border-2">
+            AKNAKAKJHKJD
         </div>
      );
 }
