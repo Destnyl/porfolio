@@ -1,7 +1,10 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import imageBoy from '../../public/feedback/boy.jpg'
-import imageGirl from '../../public/feedback/girl.png'
+import pergent from '../../public/feedback/pergent.jpeg'
+import cams from '../../public/feedback/cams.jpeg'
+import jourish from '../../public/feedback/jourish.jpeg'
+import joana from '../../public/feedback/joana.jpeg'
+import x from '../../public/feedback/x.jpeg'
 import imageUrl from '../../public/feedback/recognition.png'
 import imageNominate from '../../public/feedback/nominate.png'
 import Image from "next/image";
@@ -52,6 +55,7 @@ const Slider = (props: { deviceType: string | undefined; }) => {
       <Fragment>
       <div className="border border-green-600 w-16" />
         <Image
+            className="rounded-full"
             src={imageUrl}
             width={300}
             height={300}
@@ -68,7 +72,8 @@ const Slider = (props: { deviceType: string | undefined; }) => {
       <Fragment>
       <div className="border border-green-600 w-16" />
         <Image
-            src={imageGirl}
+            className="rounded-full"
+            src={joana}
             width={300}
             height={300}
             alt='Project'
@@ -86,7 +91,8 @@ const Slider = (props: { deviceType: string | undefined; }) => {
       <Fragment>
       <div className="border border-green-600 w-16" />
         <Image
-            src={imageBoy}
+            className="rounded-full"
+            src={x}
             width={300}
             height={300}
             alt='Project'
@@ -114,6 +120,72 @@ const Slider = (props: { deviceType: string | undefined; }) => {
         <h1 className="text-2xl">UBx</h1>
         <h1 className="text-sm">Technology Services Circle of Excellence </h1>
 
+
+      </Fragment>
+      </Card>
+    </div>
+
+    <div>
+      <Card>
+      <Fragment>
+      <div className="border border-green-600 w-16" />
+        <Image
+            className="rounded-full"
+            src={jourish}
+            width={300}
+            height={300}
+            alt='Project'
+        />
+        <h1 className="text-2xl">Jourish Abasolo</h1>
+        <h1 className="text-sm">UBx - Software Engineer</h1>
+        <p className="break-normal">Andrea is a dependable and hard-working developer.
+          She gets the job done and can work with any team. She can quickly understand
+          and work her way through new codebases with less supervision. </p>
+
+      </Fragment>
+      </Card>
+    </div>
+
+    <div>
+      <Card>
+      <Fragment>
+      <div className="border border-green-600 w-16" />
+        <Image
+            className="rounded-full"
+            src={cams}
+            width={300}
+            height={300}
+            alt='Project'
+        />
+        <h1 className="text-2xl">Camille Vallota</h1>
+        <h1 className="text-sm">UBx - Quality Engineer</h1>
+        <p className="break-normal">
+        Andrea is keen to understand the technical know-how of the system and workflow as she plans out her tasks,
+        she is also receptive and responsive on investigating issues raised in the team,
+        making sure fix has been applied and behaved as expected.
+        She has improved a lot and can handle multiple issues simultaneously with great determination.
+        </p>
+
+      </Fragment>
+      </Card>
+    </div>
+
+    <div>
+      <Card>
+      <Fragment>
+      <div className="border border-green-600 w-16" />
+        <Image
+            className="rounded-full"
+            src={pergent}
+            width={300}
+            height={300}
+            alt='Project'
+        />
+        <h1 className="text-2xl">Pergent Galang</h1>
+        <h1 className="text-sm">Bitcapp - Frontend Developer</h1>
+        <p className="break-normal">Andrea was my team mate on my first job.
+          She was a reliable contributor to the team specifically on Frontend or Backend Development.
+        </p>
 
       </Fragment>
       </Card>
