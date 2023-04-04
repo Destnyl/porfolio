@@ -4,13 +4,13 @@ import imageURL from '../public/Logo.svg'
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
-  { name: 'About', href: '/work', current: false },
+  // { name: 'About', href: '/work', current: false },
   // { name: 'Contact', href: '/contact', current: false }
 ]
 
 const Navbar = () => {
   return ( 
-    <nav className="2xl:container z-40 flex gap-x-8 justify-between p-7 bg-stone-900 fixed left-0 right-0 drop-shadow-lg">
+    <nav className="z-40 flex gap-x-8 justify-between p-7 bg-stone-900 fixed left-0 right-0 drop-shadow-lg">
       <div className="logo flex flex-row gap-x-1.5 items-center">
       <Image
           src={imageURL}

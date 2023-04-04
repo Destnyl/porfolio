@@ -5,6 +5,7 @@ import cams from '../../public/feedback/cams.jpeg'
 import jourish from '../../public/feedback/jourish.jpeg'
 import joana from '../../public/feedback/joana.jpeg'
 import x from '../../public/feedback/x.jpeg'
+import reymar from '../../public/feedback/reymar.jpeg'
 import imageUrl from '../../public/feedback/recognition.png'
 import imageNominate from '../../public/feedback/nominate.png'
 import Image from "next/image";
@@ -190,6 +191,30 @@ const Slider = (props: { deviceType: string | undefined; }) => {
       </Fragment>
       </Card>
     </div>
+
+    <div>
+      <Card>
+      <Fragment>
+      <div className="border border-green-600 w-16" />
+        <Image
+            className="rounded-full"
+            src={reymar}
+            width={300}
+            height={300}
+            alt='Project'
+        />
+        <h1 className="text-2xl">Reymar Enteria</h1>
+        <h1 className="text-sm">UBx - Software Engineer</h1>
+        <p className="break-normal">Andrea is an incredibly talented Front End Developer
+        who truly has a passion for creating visually stunning and user-friendly websites.
+        They have an eye for detail and are highly skilled in front-end technologies such as HTML, CSS, and JavaScript.
+        They can also use frameworks like Vue.JS to create dynamic web applications.
+        </p>
+
+      </Fragment>
+      </Card>
+    </div>
+
   </Carousel>
    );
 }
