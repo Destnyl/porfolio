@@ -227,7 +227,7 @@ const Slider = (props: { deviceType: string | undefined; }) => {
             height={300}
             alt='Project'
         />
-        <h1 className="text-2xl">Reymar Enteria</h1>
+        <h1 className="text-2xl">Zyb Jared Valdez</h1>
         <h1 className="text-sm">UBx - Software Engineer</h1>
         <p className="break-normal">
         Andrea is a reliable front-end engineer. She joined the team with zero knowledge about the current tech stack.
