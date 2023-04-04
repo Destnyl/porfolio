@@ -5,6 +5,7 @@ import cams from '../../public/feedback/cams.jpeg'
 import jourish from '../../public/feedback/jourish.jpeg'
 import joana from '../../public/feedback/joana.jpeg'
 import x from '../../public/feedback/x.jpeg'
+import jared from '../../public/feedback/jared.jpeg'
 import reymar from '../../public/feedback/reymar.jpeg'
 import imageUrl from '../../public/feedback/recognition.png'
 import imageNominate from '../../public/feedback/nominate.png'
@@ -209,6 +210,30 @@ const Slider = (props: { deviceType: string | undefined; }) => {
         who truly has a passion for creating visually stunning and user-friendly websites.
         They have an eye for detail and are highly skilled in front-end technologies such as HTML, CSS, and JavaScript.
         They can also use frameworks like Vue.JS to create dynamic web applications.
+        </p>
+
+      </Fragment>
+      </Card>
+    </div>
+
+    <div>
+      <Card>
+      <Fragment>
+      <div className="border border-green-600 w-16" />
+        <Image
+            className="rounded-full"
+            src={jared}
+            width={300}
+            height={300}
+            alt='Project'
+        />
+        <h1 className="text-2xl">Reymar Enteria</h1>
+        <h1 className="text-sm">UBx - Software Engineer</h1>
+        <p className="break-normal">
+        Andrea is a reliable front-end engineer. She joined the team with zero knowledge about the current tech stack.
+        After a few months, she has knowledge and technical skills on par with a tenured front-end engineer in the project.
+        She has a great eye for detail and tenacity for learning; she makes sure all criteria are met. At the same time,
+        make sure she always learns from every task given to her.
         </p>
 
       </Fragment>
