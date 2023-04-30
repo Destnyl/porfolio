@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Icon = (props : any) => {
     return ( 
-        <div className="text-center flex flex-col items-center bg-stone-900 rounded-full p-4 border border-emerald-700">
+        <div className="text-center flex flex-col items-center bg-stone-900 rounded-full p-4 border border-emerald-700 rounded-full">
             <Image
                 src={props.url}
                 width="30"

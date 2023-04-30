@@ -15,7 +15,7 @@ function Footer() {
           height={20}
           alt='Project'
       />
-        <h1>Copyright © 2022 AndreaDestajo</h1>
+        <h1>Copyright © 2023 AndreaDestajo</h1>
       </div>
       <div className="flex flex-row gap-x-7 items-center">
         <a href="https://web.facebook.com/andrealyn.destajo" target="_blank" rel="noreferrer">
