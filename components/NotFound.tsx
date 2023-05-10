@@ -2,7 +2,7 @@ import Image from 'next/image';
 import imageUrl from '../public/shock.png'
 const NotFound = () => {
     return ( 
-        <div className="text-center flex flex-col items-center">
+        <div className="text-center flex flex-col items-center h-screen justify-center">
             <Image
                 src={imageUrl}
                 width="300"

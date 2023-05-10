@@ -27,7 +27,7 @@ function Footer() {
             alt='Project'
         />
         </a>
-      <a href="https://www.linkedin.com/in/andrea-lyn-destajo-828317139/" target="_blank" rel="noreferrer">
+      <a href="https://www.linkedin.com/in/andrea-destajo-828317139/" target="_blank" rel="noreferrer">
       <Image
           className="cursor-pointer"
           src={LinkedInLogo}
