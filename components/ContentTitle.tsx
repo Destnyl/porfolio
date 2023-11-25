@@ -4,7 +4,7 @@ interface label {
 
 const Section = (props: label) => {
     return ( 
-        <div className="text-xs text-emerald-600">
+                                    <div className="text-xs text-emerald-600">
             ---{props.title}
         </div>
      );

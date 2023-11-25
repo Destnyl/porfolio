@@ -14,7 +14,8 @@ const Intro = () => {
             />
             <div className="flex flex-col md:flex-row gap-x-8 gap-y-8 font-mono pb-32 w-8/12">
                 <ContentDetails
-                    title='Hello I&apos;m Andrea Destajo,'
+                    preLabel='Hello, I&apos;m '
+                    title='Andrea Destajo,'
                     description='Hard working professional with almost 3 years of experience in providing comprehensive technical support to clients and companies.
                     Enthusiastic professional with background in developing a e-commerce project.
 
@@ -23,6 +24,7 @@ const Intro = () => {
                     btnLabel='Contact'
                     fn={handleClick}
                     fontSize='text-3xl'
+                    hasAnimation
                 />
             </div>
         </div>
