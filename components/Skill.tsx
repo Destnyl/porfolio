@@ -8,7 +8,7 @@ import { SKILLS } from "../constants";
 
 const Skills = () => {
   const handleClick = (url: any) => {
-    window.open("../public/file/resume.pdf", "_blank");
+    window.open("/file/resume.pdf", "_blank");
   };
 
   const containerVariants = {
