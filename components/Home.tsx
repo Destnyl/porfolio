@@ -4,47 +4,40 @@ import Highlight from "./Highlight";
 import Intro from "./Introduction";
 import Project from "./Project";
 import Skills from "./Skill";
-import PageTransition from "./PageTransition";
-import ScrollAnimation from "./ScrollAnimation";
 
 const Home = () => {
   return (
-    <PageTransition>
-      <motion.div
-        className="relative space-y-0 overflow-hidden"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-      >
-        {/* Hero Section */}
-        <ScrollAnimation animationType="fadeIn">
-          <section id="home">
-            <Intro />
-          </section>
-        </ScrollAnimation>
+    <motion.div
+      className="relative space-y-0"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      {/* Hero Section */}
+      <section id="home">
+        <Intro />
+      </section>
 
-        {/* Skills Section */}
-        <ScrollAnimation animationType="slideUp" delay={0.2}>
-          <section id="skills" className="relative">
-            <Skills />
-          </section>
-        </ScrollAnimation>
+      {/* Skills Section */}
+      <section id="skills" className="relative">
+        <Skills />
+      </section>
 
-        {/* Projects Section */}
-        <ScrollAnimation animationType="slideUp" delay={0.3}>
-          <section id="projects" className="relative">
-            <Project />
-          </section>
-        </ScrollAnimation>
+      {/* Projects Section */}
+      <section id="projects" className="relative">
+        <Project />
+      </section>
 
-        {/* Testimonials/Highlights Section */}
-        <ScrollAnimation animationType="slideUp" delay={0.5}>
-          <section id="testimonials" className="relative">
-            <Highlight />
-          </section>
-        </ScrollAnimation>
-      </motion.div>
-    </PageTransition>
+      {/* Experience Section - Uncomment when ready */}
+      {/* <section id="experience" className="relative">
+                <Experience />
+            </section> */}
+
+      {/* Testimonials/Highlights Section */}
+      <section id="testimonials" className="relative">
+        <Highlight />
+      </section>
+    </motion.div>
   );
 };
 
