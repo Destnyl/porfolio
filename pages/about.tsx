@@ -199,7 +199,7 @@ const About = () => {
                   <StaggerContainer className="space-y-6">
                     <StaggerItem>
                       <h2 className="text-3xl font-bold text-white mb-4 font-space">
-                        Hello, I&apos;m Andrea
+                        Hello, I'm Andrea
                       </h2>
                     </StaggerItem>
 
@@ -217,8 +217,8 @@ const About = () => {
                           {" "}
                           5 years
                         </span>
-                        , during which I&apos;ve mastered both frontend and
-                        backend technologies.
+                        , during which I've mastered both frontend and backend
+                        technologies.
                       </p>
                     </StaggerItem>
 
