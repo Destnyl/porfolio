@@ -73,23 +73,25 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <DefaultLayout>
-      <AnimatePresence mode="wait" initial={false}>
-        {loading && <LoadingScreen key="loading" />}
-      </AnimatePresence>
+      <>
+        <AnimatePresence mode="wait" initial={false}>
+          {loading && <LoadingScreen key="loading" />}
+        </AnimatePresence>
 
-      <AnimatePresence mode="wait" initial={false}>
-        <motion.div
-          key={router.asPath}
-          initial="initial"
-          animate="in"
-          exit="out"
-          variants={pageVariants}
-          transition={pageTransition}
-          className="relative z-10"
-        >
-          <Component {...pageProps} />
-        </motion.div>
-      </AnimatePresence>
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.div
+            key={router.asPath}
+            initial="initial"
+            animate="in"
+            exit="out"
+            variants={pageVariants}
+            transition={pageTransition}
+            className="relative z-10"
+          >
+            <Component {...pageProps} />
+          </motion.div>
+        </AnimatePresence>
+      </>
     </DefaultLayout>
   );
 }
