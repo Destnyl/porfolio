@@ -9,6 +9,7 @@ import imageUrl from "../public/feedback/recognition.png";
 import imageNominate from "../public/feedback/nominate.png";
 import zelle from "../public/feedback/zelle.jpeg";
 import gelo from "../public/feedback/gelo.jpeg";
+import placeHolderImage from "../public/feedback/boy.jpg";
 
 export const RECOMMENDATIONS = [
   {
@@ -86,6 +87,34 @@ export const RECOMMENDATIONS = [
     recommendation:
       "I had the privilege of working with Andrea, and I can confidently say she is a rising star in the IT industry. Despite being new to the field, Andrea has shown remarkable aptitude, quickly mastering complex concepts and delivering results that exceed expectations. What sets Andrea apart is her natural leadership ability. She takes initiative, motivates her team, and fosters a collaborative environment that inspires everyone to bring their best to the table. Her problem-solving skills, coupled with her ability to stay calm under pressure, make her an invaluable asset to any project she undertakes. Andrea’s dedication, adaptability, and passion for growth are truly inspiring. I’m confident she will continue to make significant contributions to the IT field and lead with excellence. It’s been an absolute pleasure working alongside her, and I look forward to seeing all the incredible things she will achieve in her career.",
     photo: zelle,
+  },
+  {
+    name: "Draisdale Niño Herrera",
+    work: "Frontend Developer",
+    recommendation:
+      "Andrea joined Sprout as a frontend developer, and in her first year, she quickly proved herself as a standout talent. She writes clean, thoughtful code, cares deeply about UX and performance, and picks up new challenges with ease. Beyond her technical skills, Andrea is a collaborative, proactive teammate who elevates every project she touches. Any team would be lucky to have her.",
+    photo: placeHolderImage,
+  },
+  {
+    name: "Jan Gabriel Reyes",
+    work: "Delivery Manager",
+    recommendation:
+      "I had the pleasure of working with Adrea, and she is an exceptional Front-End Engineer. She consistently follows established processes while maintaining a proactive and solutions-oriented mindset. She’s never hesitant to ask thoughtful questions to ensure clarity and alignment, which ultimately leads to high-quality outcomes. Adrea demonstrates strong problem-solving skills, especially when faced with challenges in her work items. She provides realistic and well-considered estimations for her tasks and consistently delivers on time, often even ahead of schedule.",
+    photo: placeHolderImage,
+  },
+  {
+    name: "Gio Ramos",
+    work: "Backend Developer",
+    recommendation:
+      "Working with Andrea has been a great experience. As a backend developer, I really appreciate frontend engineers who understand system design and data flow. She absolutely does. She builds clean, maintainable UI components and consistently thinks about performance, error handling, and user experience under real-world conditions. She communicates clearly, gives constructive feedback on APIs, and genuinely improves the overall product quality. She’s not just a frontend implementer. She’s a true engineering partner.",
+    photo: placeHolderImage,
+  },
+  {
+    name: "Glenda Sevilla",
+    work: "Product Manager",
+    recommendation:
+      "Very easy to work with, approachable and skilled with FE development.",
+    photo: placeHolderImage,
   },
   // {
   //     name: '',
