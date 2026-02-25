@@ -3,10 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['localhost'],
-    unoptimized: false,
-    formats: ['image/webp', 'image/avif'],
+    // Disable built-in optimization for Netlify; serve files directly from /public
+    unoptimized: true,
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
