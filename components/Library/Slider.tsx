@@ -41,20 +41,23 @@ const FeedbackModal = ({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
+          transition={{ duration: 0.15, ease: "easeOut" }}
+          style={{ willChange: "opacity" }}
         >
           {/* Backdrop */}
           <motion.div
-            className="absolute inset-0 bg-black/80 backdrop-blur-md"
+            className="absolute inset-0 bg-black/80"
             onClick={onClose}
           />
 
           {/* Modal Content */}
           <motion.div
-            className="relative bg-dark-800/90 backdrop-blur-xl border border-white/10 rounded-2xl max-w-6xl max-h-[90vh] overflow-hidden"
-            initial={{ scale: 0.8, opacity: 0 }}
+            className="relative bg-dark-800/90 border border-white/10 rounded-2xl max-w-6xl max-h-[90vh] overflow-hidden"
+            initial={{ scale: 0.98, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.8, opacity: 0 }}
-            transition={{ type: "spring", damping: 25, stiffness: 300 }}
+            exit={{ scale: 0.98, opacity: 0 }}
+            transition={{ duration: 0.15, ease: "easeOut" }}
+            style={{ willChange: "transform, opacity" }}
           >
             {/* Header */}
             <div className="flex items-center justify-between p-6 border-b border-white/10">
@@ -85,12 +88,7 @@ const FeedbackModal = ({
             <div className="p-6 overflow-y-auto max-h-[70vh]">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {recommendations.map((recommendation, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3, delay: index * 0.05 }}
-                  >
+                  <div key={index}>
                     <Card className="h-full">
                       <div className="p-6">
                         {/* Profile Section */}
@@ -100,7 +98,7 @@ const FeedbackModal = ({
                             onClick={() =>
                               handleImageClick(
                                 recommendation.photo,
-                                recommendation.name
+                                recommendation.name,
                               )
                             }
                           >
@@ -157,7 +155,7 @@ const FeedbackModal = ({
                         </div>
                       </div>
                     </Card>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             </div>
@@ -224,12 +222,10 @@ const Slider = (props: { deviceType: string | undefined }) => {
           height: 40px !important;
           min-width: 40px !important;
           min-height: 40px !important;
-          backdrop-filter: blur(10px);
-          transition: all 0.3s ease !important;
+          transition: background 0.15s ease !important;
         }
         .react-multiple-carousel__arrow:hover {
           background: rgba(102, 126, 234, 1) !important;
-          transform: scale(1.1);
         }
         .react-multiple-carousel__arrow::before {
           font-size: 16px !important;
@@ -264,21 +260,16 @@ const Slider = (props: { deviceType: string | undefined }) => {
         autoPlay={props.deviceType !== "mobile" ? true : false}
         autoPlaySpeed={4000}
         keyBoardControl={true}
-        customTransition="all .5"
-        transitionDuration={500}
+        customTransition="transform 0.3s ease-out"
+        transitionDuration={300}
         containerClass="carousel-container"
         removeArrowOnDeviceType={["mobile"]}
         deviceType={props.deviceType}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
       >
-        {displayedRecommendations.map((recommendation, index) => (
-          <motion.div
-            key={recommendation.name}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-          >
+        {displayedRecommendations.map((recommendation) => (
+          <div key={recommendation.name}>
             <Card className="h-full">
               <div className="p-4">
                 {/* Compact Profile Section */}
@@ -288,7 +279,7 @@ const Slider = (props: { deviceType: string | undefined }) => {
                     onClick={() =>
                       handleImageClick(
                         recommendation.photo,
-                        recommendation.name
+                        recommendation.name,
                       )
                     }
                   >
@@ -345,20 +336,15 @@ const Slider = (props: { deviceType: string | undefined }) => {
                 </div>
               </div>
             </Card>
-          </motion.div>
+          </div>
         ))}
       </Carousel>
 
       {/* View All Feedback Button */}
-      <motion.div
-        className="text-center mt-8"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.6 }}
-      >
+      <div className="text-center mt-8">
         <button
           onClick={() => setIsFeedbackModalOpen(true)}
-          className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-500 to-secondary-500 text-white rounded-full font-medium hover:shadow-lg hover:shadow-primary-500/25 transition-all duration-300 transform hover:scale-105"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-500 to-secondary-500 text-white rounded-full font-medium transition-colors duration-150 hover:from-primary-600 hover:to-secondary-600"
         >
           <span>View All Feedback</span>
           <svg
@@ -378,7 +364,7 @@ const Slider = (props: { deviceType: string | undefined }) => {
             {RECOMMENDATIONS.length}
           </span>
         </button>
-      </motion.div>
+      </div>
 
       {/* Image Viewer Modal */}
       <ImageViewer

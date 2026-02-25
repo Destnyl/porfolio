@@ -17,7 +17,7 @@ export const useImageViewer = () => {
     // Clear image data after animation completes
     setTimeout(() => {
       setCurrentImage({ src: "", alt: "" });
-    }, 300);
+    }, 200);
   };
 
   return {

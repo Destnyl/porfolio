@@ -35,8 +35,6 @@ const ImageViewer = ({
     };
   }, [isOpen, onClose]);
 
-  if (!isOpen) return null;
-
   return (
     <AnimatePresence>
       {isOpen && (
@@ -45,11 +43,11 @@ const ImageViewer = ({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.18, ease: "easeOut" }}
         >
-          {/* Backdrop */}
+          {/* Backdrop (no heavy blur) */}
           <motion.div
-            className="absolute inset-0 bg-black/80 backdrop-blur-md"
+            className="absolute inset-0 bg-black/80"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -59,17 +57,16 @@ const ImageViewer = ({
           {/* Modal Content */}
           <motion.div
             className="relative max-w-5xl max-h-[90vh] p-4"
-            initial={{ scale: 0.7, opacity: 0 }}
+            initial={{ scale: 0.98, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.7, opacity: 0 }}
-            transition={{ type: "spring", damping: 25, stiffness: 300 }}
+            exit={{ scale: 0.98, opacity: 0 }}
+            transition={{ duration: 0.18, ease: "easeOut" }}
+            style={{ willChange: "transform, opacity" }}
           >
             {/* Close Button */}
-            <motion.button
-              className="absolute -top-2 -right-2 z-10 w-10 h-10 bg-dark-800/80 backdrop-blur-md border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-dark-700/80 transition-colors"
+            <button
+              className="absolute -top-2 -right-2 z-10 w-10 h-10 bg-black/70 border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-black/60 transition-colors"
               onClick={onClose}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
               aria-label="Close image viewer"
             >
               <svg
@@ -85,10 +82,10 @@ const ImageViewer = ({
                   d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
-            </motion.button>
+            </button>
 
             {/* Image Container */}
-            <div className="relative bg-dark-800/50 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden">
+            <div className="relative bg-black/40 border border-white/8 rounded-2xl overflow-hidden">
               <Image
                 src={imageSrc}
                 alt={imageAlt}
@@ -109,7 +106,7 @@ const ImageViewer = ({
 
             {/* Navigation Hint */}
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center">
-              <div className="bg-dark-800/80 backdrop-blur-md border border-white/10 rounded-full px-4 py-2 text-sm text-gray-300">
+              <div className="bg-black/70 border border-white/10 rounded-full px-4 py-2 text-sm text-gray-300">
                 Press{" "}
                 <kbd className="bg-white/10 px-2 py-1 rounded text-xs">ESC</kbd>{" "}
                 to close
