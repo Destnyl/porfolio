@@ -32,6 +32,20 @@ const About = () => {
     "MongoDB",
     "Git",
     "Tailwind CSS",
+    "HTML",
+    "CSS",
+    "knockout js",
+    "NPM",
+    "YARN",
+    "REST APIs",
+    "GitHub",
+    "Jira",
+    "Agile Methodologies",
+    "VITE",
+    "Quasar",
+    "postman",
+    "Figma",
+    "Pinia Store"
   ];
 
   const experiences = [
@@ -40,8 +54,8 @@ const About = () => {
       company: " Sprout Solution",
       period: "2024 - 2026",
       description:
-        "Develops web application using VUE 3, and Knockout js, Tailwind Css, Typescript",
-      technologies: ["Vue.js", "TypeScript", "Tailwind CSS", "Knockout js"],
+        "Frontend Developer specializing in Vue 3, Knockout.js, TypeScript/JavaScript, and Tailwind CSS, building scalable, high-performance web applications. Experienced in REST API integration, secure routing with role-based access, feature flags, and migration strategies, and contributing to shared design system component libraries using Vue, Vite, Playwright, and VitePress. Led migration of legacy Knockout.js applications to Vue 3, improving performance and maintainability. Skilled in API testing (Postman), Git-based version control, Node.js, NVM, and Yarn, with active participation in Agile practices. Leverage AI tools such as GitHub Copilot, Cursor, and Claude AI to enhance productivity and code quality.",
+      technologies: ["Vue.js", "TypeScript", "Tailwind CSS", "Knockout js", "VITE", "Postman", "GitHub Copilot", "Cursor", "Claude AI", "Node.js", "NVM", "Yarn", "Figma", "Pinia Store", "Playwright", "VitePress", "REST APIs", "Agile Methodologies"],
     },
     {
       title: "Frontend Developer",
@@ -251,7 +265,7 @@ const About = () => {
               </div>
 
               <ScrollStagger
-                className="flex flex-wrap justify-center gap-4"
+                className="flex flex-wrap justify-center gap-4 gap-y-6"
                 staggerDelay={0.1}
               >
                 {skills.map((skill, index) => (
@@ -297,7 +311,6 @@ const About = () => {
               <div className="relative">
                 {/* Timeline line */}
                 <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 to-secondary-500" />
-
                 <ScrollStagger className="space-y-12" staggerDelay={0.2}>
                   {experiences.map((exp, index) => (
                     <ScrollStaggerItem key={index}>
